@@ -1,5 +1,5 @@
 {
-    "name": "nihir/country-state-city",
+    "name": "zalanihir/country-state-city",
     "description": "Laravel package for country, state, city providers with the flags",
     "type": "library",
     "license": "MIT",
