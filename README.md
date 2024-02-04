@@ -1,16 +1,5 @@
-<p align="center"><a href="https://github.com/ZalaNihir/" target="_blank"><img src="package.png" width="400" alt="laravel Country State City Seeder"></a></p>
 
 ## Laravel Country, State, City Seeder Package
-
-[![Packagist Version](https://img.shields.io/packagist/v/zalanihir/csc.svg)](https://packagist.org/packages/zalanihir/csc)
-[![License](https://img.shields.io/github/license/zalanihir/csc.svg)](LICENSE)
-[![Latest Stable Version](https://poser.pugx.org/zalanihir/csc/v)](https://packagist.org/packages/zalanihir/csc)
-[![Total Downloads](https://poser.pugx.org/zalanihir/csc/downloads)](https://packagist.org/packages/zalanihir/csc)
-[![License](https://poser.pugx.org/zalanihir/csc/license)](https://packagist.org/packages/zalanihir/csc)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/zalanihir/csc.svg?style=flat-square)](https://packagist.org/packages/zalanihir/csc)
-[![GitHub stars](https://img.shields.io/github/stars/zalanihir/csc.svg?style=social&label=Star&maxAge=2592000)](https://github.com/zalanihir/csc)
-[![GitHub watchers](https://img.shields.io/github/watchers/zalanihir/csc.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/zalanihir/csc)
-
 
  Hi, I created a package for country, state & and city seeder. You can install and use it in your laravel project. If you are using this package then you can give it a star this package is free, In the future I Will add the country code &  phone initials.
 
