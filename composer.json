@@ -1,0 +1,20 @@
+{
+    "name": "nihir/country-state-city",
+    "description": "Laravel package for country, state, city providers with the flags",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ZalaNihir",
+            "email": "zalanihir8866@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nihir\\CountryStateCity\\": "src/",
+            "Nihir\\CountryStateCity\\Console\\Commands\\": "src/Console/Commands/"
+        }
+    }
+}
