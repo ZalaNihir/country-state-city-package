@@ -97,7 +97,7 @@ use App\Models\Country;
 $countries = Country::get();
 
 @foreach ($countries as $country)
-  <img  src="{{ asset('flags/'.$country->iso2) }}"  alt="{{ $country->name }}" />
+  <img  src="{{ asset('flags/'.$country->iso2.'.png') }}"  alt="{{ $country->name }}" />
 @endforeach
 
 ```
