@@ -35,9 +35,19 @@ Make sure you do not have any country, state & city models or migrations then re
 composer require zalanihir/country-state-city
 ```
 
-## For Publishing providers
+## For Publishers
 
-first you have to add the bellow line in ```app.php``` in ```providers``` section.
+# For Laravel 10 or Laravel 9
+
+you have to add the bellow line in ```app.php``` in ```providers``` section.
+
+```bash
+\Nihir\CountryStateCity\CountryStateCityServiceProvider::class,
+```
+
+# For Laravel 11
+
+you have to add the bellow line in ```providers.php``` which is In the bootstrap folder.
 
 ```bash
 \Nihir\CountryStateCity\CountryStateCityServiceProvider::class,
