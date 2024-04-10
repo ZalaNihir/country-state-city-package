@@ -127,7 +127,8 @@ I get the all flags from the ```https://flagsapi.com/``` So the which size is 64
 
 [![Email](https://img.shields.io/badge/testnihir@gmail.com-blue?style=social&logo=gmail)](mailto:testnihir@gmail.com)
 
-[![Total Downloads](https://poser.pugx.org/zalanihir/country-state-city/downloads)](https://packagist.org/packages/zalanihir/country-state-city)
+![Packagist](https://img.shields.io/packagist/dt/zalanihir/country-state-city)
+
 
 ## Contributors
 
