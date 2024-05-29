@@ -43,4 +43,4 @@ When you're ready to start working on an issue, follow these steps:
 3. **Create a new branch** for your fix or feature:
 
    ```bash
-   git checkout -b your-branch-name
+   git checkout -b main
