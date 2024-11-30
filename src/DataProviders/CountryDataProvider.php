@@ -142,8 +142,8 @@ abstract class CountryDataProvider
             ['id' => '112', 'iso2' => 'KZ', 'name' => 'Kazakhstan', 'iso3' => 'KAZ', 'numcode' => '398', 'phonecode' => '7'],
             ['id' => '113', 'iso2' => 'KE', 'name' => 'Kenya', 'iso3' => 'KEN', 'numcode' => '404', 'phonecode' => '254'],
             ['id' => '114', 'iso2' => 'KI', 'name' => 'Kiribati', 'iso3' => 'KIR', 'numcode' => '296', 'phonecode' => '686'],
-            ['id' => '115', 'iso2' => 'KP', 'name' => 'North Korea of', 'iso3' => 'PRK', 'numcode' => '408', 'phonecode' => '850'],
-            ['id' => '116', 'iso2' => 'KR', 'name' => 'South Korea, Republic of', 'iso3' => 'KOR', 'numcode' => '410', 'phonecode' => '82'],
+            ['id' => '115', 'iso2' => 'KP', 'name' => 'Korea, Democratic People\'s Republic of', 'iso3' => 'PRK', 'numcode' => '408', 'phonecode' => '850'],
+            ['id' => '116', 'iso2' => 'KR', 'name' => 'Korea, Republic of', 'iso3' => 'KOR', 'numcode' => '410', 'phonecode' => '82'],
             ['id' => '117', 'iso2' => 'KW', 'name' => 'Kuwait', 'iso3' => 'KWT', 'numcode' => '414', 'phonecode' => '965'],
             ['id' => '118', 'iso2' => 'KG', 'name' => 'Kyrgyzstan', 'iso3' => 'KGZ', 'numcode' => '417', 'phonecode' => '996'],
 
@@ -160,7 +160,7 @@ abstract class CountryDataProvider
 
             // M Country
             ['id' => '128', 'iso2' => 'MO', 'name' => 'Macao', 'iso3' => 'MAC', 'numcode' => '446', 'phonecode' => '853'],
-            ['id' => '129', 'iso2' => 'MK', 'name' => 'North Macedonia', 'iso3' => 'MKD', 'numcode' => '807', 'phonecode' => '389'],
+            ['id' => '129', 'iso2' => 'MK', 'name' => 'Macedonia, the Former Yugoslav Republic of', 'iso3' => 'MKD', 'numcode' => '807', 'phonecode' => '389'],
             ['id' => '130', 'iso2' => 'MG', 'name' => 'Madagascar', 'iso3' => 'MDG', 'numcode' => '450', 'phonecode' => '261'],
             ['id' => '131', 'iso2' => 'MW', 'name' => 'Malawi', 'iso3' => 'MWI', 'numcode' => '454', 'phonecode' => '265'],
             ['id' => '132', 'iso2' => 'MY', 'name' => 'Malaysia', 'iso3' => 'MYS', 'numcode' => '458', 'phonecode' => '60'],
@@ -259,7 +259,7 @@ abstract class CountryDataProvider
             ['id' => '213', 'iso2' => 'SY', 'name' => 'Syrian Arab Republic', 'iso3' => 'SYR', 'numcode' => '760', 'phonecode' => '963'],
 
             // T Country
-            ['id' => '214', 'iso2' => 'TW', 'name' => 'Taiwan', 'iso3' => 'TWN', 'numcode' => '158', 'phonecode' => '886'],
+            ['id' => '214', 'iso2' => 'TW', 'name' => 'Taiwan, Province of China', 'iso3' => 'TWN', 'numcode' => '158', 'phonecode' => '886'],
             ['id' => '215', 'iso2' => 'TJ', 'name' => 'Tajikistan', 'iso3' => 'TJK', 'numcode' => '762', 'phonecode' => '992'],
             ['id' => '216', 'iso2' => 'TZ', 'name' => 'Tanzania, United Republic of', 'iso3' => 'TZA', 'numcode' => '834', 'phonecode' => '255'],
             ['id' => '217', 'iso2' => 'TH', 'name' => 'Thailand', 'iso3' => 'THA', 'numcode' => '764', 'phonecode' => '66'],
