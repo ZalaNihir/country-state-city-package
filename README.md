@@ -1,138 +1,107 @@
+# Laravel Country-State-City Seeder
 
-## Laravel Country, State, City Seeder Package
+[![Packagist Version](https://img.shields.io/packagist/v/zalanihir/country-state-city?label=packagist&logo=packagist)](https://packagist.org/packages/zalanihir/country-state-city)
 
- Hi, I created a package for country, state & and city seeder. You can install and use it in your laravel project. If you are using this package then you can give it a star this package is free, In the future I Will add the country code &  phone initials.
+Lightweight Laravel package to seed Countries, States and Cities with model relationships and optional country flags.
 
-## What is this library?
+<!-- Preview image (optional) -->
 
-This is a library called CSC aka Country-State-City Seeders. While developing, I faced the issues so often that where can I get the seeder files? & how can I manage it? Is there a relationship or not?
+![Seeder preview](images/contry-state-city-seeder.png)
 
-So I googled & found some seeders files & with that help, I made this library which already has a relationship between their models.
+What you'll get:
 
-## Why do you need this?
+- Seeders and migrations for Country, State and City models
+- Pre-defined model relationships (Country -> State -> City)
+- Optional ISO codes (iso2, iso3), numeric code, phone code and country flags
 
-If your project needs the country state & city dropdown & you have no idea about how it works I already made the library for it. Here are some of the points.
+Why use it?
 
-- Open Source & Free
+- Open source and free
+- Easy to install and modify
+- Works out of the box with Laravel
 
-- Easy to install
+Requirements
 
-- Easy to modify
+- PHP 8.1+ (or the version required by your Laravel application)
+- Laravel 9 / 10 / 11
 
-- Models have already a relationship
+Quick installation
 
-## For Installation
-
-- To install this package you have to install this package using composer.
-
-## Note:
-
-Make sure you do not have any country, state & city models or migrations then remove it other this will create conflicts.
-
-# How to install it?
+Install via Composer:
 
 ```bash
 composer require zalanihir/country-state-city
 ```
 
-## For Publishers
+Register the service provider (only if your Laravel version requires manual registration):
 
-# For Laravel 10 or Laravel 9
+- Laravel 9 / 10: add this to `config/app.php` providers array:
 
-you have to add the bellow line in ```app.php``` in ```providers``` section.
-
-```bash
+```php
 \Nihir\CountryStateCity\CountryStateCityServiceProvider::class,
 ```
 
-# For Laravel 11
+- Laravel 11: add this to `bootstrap/app/providers.php` (if applicable):
 
-you have to add the bellow line in ```providers.php``` which is In the bootstrap folder.
-
-```bash
+```php
 \Nihir\CountryStateCity\CountryStateCityServiceProvider::class,
 ```
 
-publishing command
+Publish package files and flags:
 
 ```bash
 php artisan vendor:publish --provider="Nihir\CountryStateCity\CountryStateCityServiceProvider"
+php artisan csc:publish-flags
 ```
 
-The previous command publishes the files in your project.
-
-Now you can simply run the following commands.
-
-```bash
-php artisan optimize:clear
-php artisan config:cache
-```
-
-This will clear your caches
+Run migrations and seeders:
 
 ```bash
 php artisan migrate
 ```
 
-This will migrate the tables into databases.
+Add the seeder call to `DatabaseSeeder.php`:
 
-Now add this line in your ```DataBaseSeeder.php``` file.
-
-```bash
+```php
 $this->call(CountryStateCityTableSeeder::class);
 ```
 
-Now Simplay runs the following command for the seed of the database.
+Then run:
 
 ```bash
 php artisan db:seed
 ```
 
-The CountryModel, CityModel & StateModel has already relationships you do not have to worry about  relationships & more than that I updated the Country Model, Migration & DataProvider and I added the iso2, iso3, numcode & country phonecode & country Flags as well.
+Notes
 
+- If you already have Country/State/City models or migrations in your project, remove or rename them to avoid conflicts before running the package migrations.
+- The package fetches flags from https://flagsapi.com/ (64px). If some flags are missing you can contribute missing images in the `flags/` folder.
 
-## Country Flags
+Usage example (display flags):
 
-In order to use the country flages you have to first get the flags by using bellow command.
-
-```bash
-php artisan csc:publish-flags
-```
-
-After the command you will see that in your public folder there is one more folder will be added named flags.So now you have to just use it Here I will give you a basic example of that how to use it you can customize it for sure as per your need.
-
-```bash
+```php
 use App\Models\Country;
 
-$countries = Country::get();
+$countries = Country::all();
 
-@foreach ($countries as $country)
-  <img  src="{{ asset('flags/'.$country->iso2.'.png') }}"  alt="{{ $country->name }}" />
-@endforeach
-
+foreach ($countries as $country) {
+    echo '<img src="'.asset('flags/'.$country->iso2.'.png').'" alt="'.$country->name.'" />';
+}
 ```
 
-## Friendly Note
+Support
 
-if you have any query about this package face some error or need support to update simply mail me <a href="mailto:testnihir@gmail.com">testnihir@gmail.com</a>.
+If you find issues or need help, email: <testnihir@gmail.com>
 
-I get the all flags from the ```https://flagsapi.com/``` So the which size is 64 This would take alot time to manage it & some of countries's flags I did not get I will be updated soon if you want to update it & contribute in the project you can do it as well this will be vary helpfull for me. Thank you.
+Connect with me
 
-# Connect with me
-[![Twitter URL](https://img.shields.io/badge/Follow%20%40NihirZala-1DA1F2?style=social&logo=twitter)](https://twitter.com/NihirZala)
+[![Twitter](https://img.shields.io/badge/Follow%20%40NihirZala-1DA1F2?style=social&logo=twitter)](https://twitter.com/NihirZala)
+[![LinkedIn](https://img.shields.io/badge/Connect%20%40nihirzala-0077B5?style=social&logo=linkedin)](https://www.linkedin.com/in/nihirzala/)
+[![Instagram](https://img.shields.io/badge/Follow%20%40inihirzala-ff69b4?style=social&logo=instagram)](https://www.instagram.com/inihirzala/)
 
-[![LinkedIn URL](https://img.shields.io/badge/Connect%20%40nihirzala-0077B5?style=social&logo=linkedin)](https://www.linkedin.com/in/nihirzala/)
+Contributors
 
-[![Instagram URL](https://img.shields.io/badge/Follow%20%40inihirzala-ff69b4?style=social&logo=instagram)](https://www.instagram.com/inihirzala/)
-
-[![Email](https://img.shields.io/badge/testnihir@gmail.com-blue?style=social&logo=gmail)](mailto:testnihir@gmail.com)
-
-![Packagist](https://img.shields.io/packagist/dt/zalanihir/country-state-city)
-
-
-## Contributors
-
-Thank you to all the wonderful people who contributed to this project!
+Thanks to everyone who contributed!
 
 <table>
   <tr>
@@ -143,14 +112,7 @@ Thank you to all the wonderful people who contributed to this project!
         <sub><b>Zala Nihir</b></sub>
       </a>
     </td>
-    <!-- Add more contributors as needed -->
   </tr>
 </table>
 
-Want to contribute? Check out our [Contributing Guidelines](CONTRIBUTING.md).
-
-# Other Project
-
-Check my Admin Panel
-
-<a href="https://github.com/ZalaNihir/adminlte-laravel10" align="right"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ZalaNihir&repo=adminlte-laravel10&title_color=ffffff&text_color=ffffff&icon_color=0891b2&bg_color=000000&hide_border=true&locale=en" /></a>
+Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md).
