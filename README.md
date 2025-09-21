@@ -6,7 +6,7 @@ Lightweight Laravel package to seed Countries, States and Cities with model rela
 
 <!-- Preview image (optional) -->
 
-![Seeder preview](images/contry-state-city-seeder.png)
+![Seeder preview](images/country-state-city-seeder.png)
 
 What you'll get:
 
@@ -95,9 +95,9 @@ If you find issues or need help, email: <testnihir@gmail.com>
 
 Connect with me
 
-[![Twitter](https://img.shields.io/badge/Follow%20%40NihirZala-1DA1F2?style=social&logo=twitter)](https://twitter.com/NihirZala)
-[![LinkedIn](https://img.shields.io/badge/Connect%20%40nihirzala-0077B5?style=social&logo=linkedin)](https://www.linkedin.com/in/nihirzala/)
-[![Instagram](https://img.shields.io/badge/Follow%20%40inihirzala-ff69b4?style=social&logo=instagram)](https://www.instagram.com/inihirzala/)
+[![Twitter](https://img.shields.io/badge/Follow%20%40NihirZala-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/NihirZala)
+[![LinkedIn](https://img.shields.io/badge/Connect%20%40nihirzala-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nihirzala/)
+[![Instagram](https://img.shields.io/badge/Follow%20%40inihirzala-ff69b4?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/inihirzala/)
 
 Contributors
 
